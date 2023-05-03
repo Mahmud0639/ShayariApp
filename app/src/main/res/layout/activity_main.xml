@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#f8fafb"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:orientation="horizontal"
+        android:background="@color/red"
+        android:weightSum="2">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="15dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/acme"
+            android:gravity="start"
+            android:text="Prayer, Share
+            \nbest Prayers's time
+            \nwith your friends"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="150dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:src="@drawable/quran"
+            android:scaleType="fitCenter"
+            android:layout_marginBottom="45dp"/>
+
+    </LinearLayout>
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never"
+        android:layout_marginTop="-50dp">
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:columnCount="2"
+            android:paddingVertical="24dp">
+            <com.google.android.material.card.MaterialCardView
+                android:layout_height="match_parent"
+                android:layout_width="wrap_content"
+                android:layout_columnWeight="1"
+                android:id="@+id/card1"
+                android:clickable="true"
+                android:layout_gravity="center"
+                android:focusable="true"
+                app:cardElevation="0.1dp"
+                app:cardCornerRadius="3dp">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center">
+                    <ImageView
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:src="@drawable/islam1"
+                        android:scaleType="centerCrop"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Feel Islam"
+                        android:padding="12dp"
+                        android:textStyle="bold"/>
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+            <com.google.android.material.card.MaterialCardView
+                android:layout_height="match_parent"
+                android:layout_width="wrap_content"
+                android:layout_columnWeight="1"
+                android:id="@+id/card2"
+                android:layout_gravity="center"
+                android:clickable="true"
+                android:focusable="true"
+                app:cardElevation="0.1dp"
+                app:cardCornerRadius="3dp">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center">
+                    <ImageView
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:src="@drawable/islam"
+                        android:scaleType="centerCrop"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Feel Islam"
+                        android:padding="12dp"
+                        android:textStyle="bold"/>
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+            <com.google.android.material.card.MaterialCardView
+                android:layout_height="match_parent"
+                android:layout_width="wrap_content"
+                android:layout_columnWeight="1"
+                android:id="@+id/card3"
+                android:clickable="true"
+                android:layout_gravity="center"
+                android:focusable="true"
+                app:cardElevation="0.1dp"
+                app:cardCornerRadius="3dp">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center">
+                    <ImageView
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:src="@drawable/mosque"
+                        android:scaleType="centerCrop"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Feel Islam"
+                        android:padding="12dp"
+                        android:textStyle="bold"/>
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+            <com.google.android.material.card.MaterialCardView
+                android:layout_height="match_parent"
+                android:layout_width="wrap_content"
+                android:layout_columnWeight="1"
+                android:id="@+id/card4"
+                android:layout_gravity="center"
+                android:clickable="true"
+                android:focusable="true"
+                app:cardElevation="0.1dp"
+                app:cardCornerRadius="3dp">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center">
+                    <ImageView
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:src="@drawable/eid"
+                        android:scaleType="centerCrop"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Feel Islam"
+                        android:padding="12dp"
+                        android:textStyle="bold"/>
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_height="match_parent"
+                android:layout_width="wrap_content"
+                android:layout_columnWeight="1"
+                android:id="@+id/card5"
+                android:layout_gravity="center"
+                android:clickable="true"
+                android:focusable="true"
+                app:cardElevation="0.1dp"
+                app:cardCornerRadius="3dp">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center">
+                    <ImageView
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:src="@drawable/ramadan"
+                        android:scaleType="centerCrop"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Feel Islam"
+                        android:padding="12dp"
+                        android:textStyle="bold"/>
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+            <com.google.android.material.card.MaterialCardView
+                android:layout_height="match_parent"
+                android:layout_width="wrap_content"
+                android:layout_columnWeight="1"
+                android:id="@+id/card6"
+                android:clickable="true"
+                android:layout_gravity="center"
+                android:focusable="true"
+                app:cardElevation="0.1dp"
+                app:cardCornerRadius="3dp">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center">
+                    <ImageView
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:src="@drawable/monajat"
+                        android:scaleType="centerCrop"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Feel Islam"
+                        android:padding="12dp"
+                        android:textStyle="bold"/>
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+            <com.google.android.material.card.MaterialCardView
+                android:layout_height="match_parent"
+                android:layout_width="wrap_content"
+                android:layout_columnWeight="1"
+                android:id="@+id/card7"
+                android:layout_gravity="center"
+                android:clickable="true"
+                android:focusable="true"
+                app:cardElevation="0.1dp"
+                app:cardCornerRadius="3dp">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center">
+                    <ImageView
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:src="@drawable/mosque2"
+                        android:scaleType="centerCrop"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Feel Islam"
+                        android:padding="12dp"
+                        android:textStyle="bold"/>
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+            <com.google.android.material.card.MaterialCardView
+                android:layout_height="match_parent"
+                android:layout_width="wrap_content"
+                android:layout_columnWeight="1"
+                android:id="@+id/card8"
+                android:layout_gravity="center"
+                android:clickable="true"
+                android:focusable="true"
+                app:cardElevation="0.1dp"
+                app:cardCornerRadius="3dp">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center">
+                    <ImageView
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:src="@drawable/kaaba"
+                        android:scaleType="centerCrop"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Feel Islam"
+                        android:padding="12dp"
+                        android:textStyle="bold"/>
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+        </GridLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+
+
+</LinearLayout>
